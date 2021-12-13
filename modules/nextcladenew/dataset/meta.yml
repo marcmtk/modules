@@ -1,0 +1,44 @@
+name: nextcladenew_dataset
+## TODO nf-core: Add a description of the module and list keywords
+description: write your description here
+keywords:
+  - sort
+tools:
+  - nextcladenew:
+      description: SARS-CoV-2 genome clade assignment, mutation calling, and sequence quality checks
+      homepage: https://github.com/nextstrain/nextclade
+      documentation: https://github.com/nextstrain/nextclade
+      tool_dev_url: https://github.com/nextstrain/nextclade
+      doi: ""
+      licence: ['MIT']
+
+## TODO nf-core: Add a description of all of the variables used as input
+input:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test', single_end:false ]
+  ## TODO nf-core: Delete / customise this example input
+  - dataset_name:
+      type: value
+      description: one of the datasets provided by nextclade (currently SARS-CoV-2 and Influenza). See 'nextclade dataset list' for details.
+
+## TODO nf-core: Add a description of all of the variables used as output
+output:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test', single_end:false ]
+  - dataset_directory:
+      type: path
+      description: "Path to dataset"
+  - versions:
+      type: file
+      description: File containing software versions
+      pattern: "versions.yml"
+
+authors:
+  - "@drpatelh"
+  - "@marcmtk"

@@ -1,0 +1,22 @@
+## TODO nf-core: Please run the following command to build this file:
+#                nf-core modules create-test-yml nextcladenew/dataset
+- name: nextcladenew dataset
+  command: nextflow run ./tests/modules/nextcladenew/dataset -entry test_nextcladenew_dataset -c ./tests/config/nextflow.config -c ./tests/modules/nextcladenew/dataset/nextflow.config
+  tags:
+    - nextcladenew
+    - nextcladenew/dataset
+  files:
+    - path: output/nextcladenew/genemap.gff
+      md5sum: 21ebebfd0f416eeb959e55ebffd808e8
+    - path: output/nextcladenew/primers.csv
+      md5sum: 5990c3483bf66ce607aeb90a44e7ef2e
+    - path: output/nextcladenew/qc.json
+      md5sum: 2e72b5073ada4334e2ac444dda927606
+    - path: output/nextcladenew/reference.fasta
+      md5sum: c7ce05f28e4ec0322c96f24e064ef55c
+    - path: output/nextcladenew/sequences.fasta
+      md5sum: 8bc4aae0ec7020bb11eb5f09f5be5d1f
+    - path: output/nextcladenew/tag.json
+      md5sum: 66f7e72e1a5a9ac81c89e0cd20685522
+    - path: output/nextcladenew/tree.json
+      md5sum: f7846bf72db6e68c34fdc97c97b2659a
